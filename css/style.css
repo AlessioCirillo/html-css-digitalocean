@@ -50,6 +50,7 @@ p{
   background: #fff;
   border: 0;
   color: #031b4f;
+  margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -142,6 +143,7 @@ p{
 
 .condition a{
 font-size: 12px;
+font-weight: 700;
 color: #2485fd;
 text-decoration: underline;
 }
@@ -157,6 +159,7 @@ text-decoration: underline;
   }
 }
 
+/*************DESKTOP**************/
 @media screen and (min-width: 991px){
   h1{
     font-size: 50px;
