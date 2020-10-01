@@ -1,0 +1,71 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+/**********HEADER**********/
+.navbar .container{
+  position: relative;
+}
+
+.navbar {
+  background: #fff;
+  border: 0;
+  color: #031b4f;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #031b54;
+  font-weight: 700;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: #2485fd;
+}
+
+.navbar-header a img{
+  width: 180px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.navbar-default .navbar-toggle{
+  position: absolute;
+  right: 0px;
+  margin-top: 15px;
+  border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #2485fd;
+}
+
+.navbar-left{
+  margin-left: 50px;
+}
+
+.navbar-collapse .navbar-right button{
+  margin-top: 9px;
+  color: #2485fd;
+  border-color: #2485fd;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .navbar-toggle{
+    display: block;
+  }
+
+  .navbar-collapse{
+    display: none;
+  }
+}
