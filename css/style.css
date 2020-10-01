@@ -13,11 +13,16 @@ body{
   border-color: #2485fd;
   font-weight: 700;
 }
+
 .btn-default:hover{
   color: #fff;
   border-color: #2485fd;
   background: #2485fd;
   font-weight: 700;
+}
+
+.lightblue-color{
+  color: #2485fd;
 }
 
 /********** TIPOGRAPHY ***********/
@@ -28,17 +33,24 @@ h1{
 }
 
 h2{
+  font-size: 26px;
   font-weight: 700;
   color: #031b54;
   margin-top: 10px;
 }
 
-.lightblue-color{
+p{
+  color: #5b6d91;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
   color: #2485fd;
 }
-p{
-  color:#b2bfd8;
-  font-size: 18px;
+a:hover{
+  text-decoration: none;
+  color: #2485fd;
 }
 
 /**********HEADER**********/
@@ -56,8 +68,10 @@ p{
 .navbar-default .navbar-nav > li > a{
   color: #031b54;
   font-weight: 700;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
   font-size: 13px;
 }
 
@@ -100,6 +114,9 @@ p{
   background-position: center;
 }
 
+.hero .hero-text p{
+  color: #b2bfd8;
+}
 .form{
   padding: 10px;
   background: #fff;
@@ -134,8 +151,7 @@ p{
   width: 16px;
 }
 
-.condition p{
-  display: inline-block;
+small{
   font-weight: 700;
   font-size: 12px;
   color: #031b54;
@@ -146,6 +162,44 @@ font-size: 12px;
 font-weight: 700;
 color: #2485fd;
 text-decoration: underline;
+}
+
+/************LOGOS************/
+.logos{
+  background: #f3f5f9;
+}
+
+.loghi{
+  height: 80px;
+}
+
+.logos .top-p .text-uppercase{
+ font-size: 12px;
+ font-weight: 700;
+ margin-bottom: 25px;
+ color: #5b6d91;
+}
+
+.logos .bottom-p a p{
+  margin-top: 15px;
+  color: #2485fd;
+  display: inline-block;
+}
+
+.logos .bottom-p p i{
+  margin-left: 10px;
+}
+
+.loghi img{
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 130px;
+  vertical-align: middle;
+}
+
+#splunk-logo{
+  padding: 10px 0;
 }
 
 /**********MEDIAQUERY *************/
@@ -160,13 +214,36 @@ text-decoration: underline;
 }
 
 /*************DESKTOP**************/
+@media screen and (min-width: 768px){
+  .hero-text{
+    padding-right: 50px;
+  }
+
+  .loghi{
+    height: 70px;
+  }
+}
+
+/***********TABLET***********/
 @media screen and (min-width: 991px){
   h1{
     font-size: 50px;
   }
 
+  p{
+    font-size: 16px;
+  }
+
   .pad-top-bot{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .loghi{
+    height: 90px;
+  }
+
+  .loghi .text-uppercase{
+   font-size: 14px;
   }
 }
