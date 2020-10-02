@@ -50,6 +50,10 @@ ul{
   margin-left: 10px;
 }
 
+.bottom-p:hover{
+  color: #031b54;
+}
+
 .mini-pic p{
   font-size: 14px;
   color: #031b54;
@@ -93,6 +97,7 @@ a{
   text-decoration: none;
   color: #2485fd;
 }
+
 a:hover{
   text-decoration: none;
   color: #2485fd;
@@ -234,6 +239,10 @@ text-decoration: underline;
   display: inline-block;
 }
 
+.logos .bottom-p a p:hover{
+  color: #031b54;
+}
+
 .loghi img{
   height: 100%;
   width: 100%;
@@ -288,10 +297,46 @@ text-decoration: underline;
 
 /**************BUSINESS***************/
 .bottom-p{
-  display: block;
-  margin-top: 10px;
+  display: inline-block;
+  margin:10px 10px 0 0;
 }
 
+.business small{
+  display: block;
+}
+
+/************GRIGLIA*************/
+ .griglia{
+  font-size: 12px;
+  background-image: linear-gradient(#0047c5, #001e99);
+}
+
+.griglia ul li{
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.griglia .col-xs-3,
+.griglia .col-md-2{
+  padding-right: 0;
+}
+
+.griglia .col-xs-5:first-child,
+.griglia .col-md-7,
+.griglia .col-sm-7{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.griglia .col-xs-5:last-child,
+.griglia .col-sm-3,
+.griglia .col-md-3{
+  padding-left: 0;
+}
+.griglia .bottom-p{
+  margin: 0;
+  width: 100%;
+}
 /**********MEDIAQUERY *************/
 @media screen and (min-width: 768px) and (max-width: 991px){
   .navbar-toggle{
