@@ -1,5 +1,6 @@
 body{
   font-family: 'Roboto', sans-serif;
+  color: #5b6d91;
 }
 
 /************* UTILITIES **************/
@@ -8,21 +9,40 @@ body{
   padding-bottom: 30px;
 }
 
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
 .btn{
   color: #2485fd;
   border-color: #2485fd;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .btn-default:hover{
   color: #fff;
   border-color: #2485fd;
   background: #2485fd;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .lightblue-color{
   color: #2485fd;
+}
+
+ul{
+  padding-left: 0;
+}
+
+.mini-pic p{
+  font-size: 14px;
+  color: #031b54;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 /********** TIPOGRAPHY ***********/
@@ -53,6 +73,9 @@ a:hover{
   color: #2485fd;
 }
 
+li{
+  list-style: none;
+}
 /**********HEADER**********/
 .navbar .container{
   position: relative;
@@ -62,12 +85,12 @@ a:hover{
   background: #fff;
   border: 0;
   color: #031b4f;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .navbar-default .navbar-nav > li > a{
   color: #031b54;
-  font-weight: 700;
+  font-weight: 500;
   padding-right: 0px;
   padding-left: 0px;
   margin-right: 10px;
@@ -151,7 +174,7 @@ a:hover{
   width: 16px;
 }
 
-small{
+.hero small{
   font-weight: 700;
   font-size: 12px;
   color: #031b54;
@@ -159,7 +182,7 @@ small{
 
 .condition a{
 font-size: 12px;
-font-weight: 700;
+font-weight: 500;
 color: #2485fd;
 text-decoration: underline;
 }
@@ -175,7 +198,7 @@ text-decoration: underline;
 
 .logos .top-p .text-uppercase{
  font-size: 12px;
- font-weight: 700;
+ font-weight: 500;
  margin-bottom: 25px;
  color: #5b6d91;
 }
@@ -192,15 +215,32 @@ text-decoration: underline;
 
 .loghi img{
   height: 100%;
-  max-height: 100%;
   width: 100%;
-  max-width: 130px;
+  max-width: 135px;
   vertical-align: middle;
 }
 
-#splunk-logo{
-  padding: 10px 0;
+#hashi{
+  padding-top: 5px;
+
 }
+
+#splunk-logo{
+  padding-top: 25px;
+  padding-bottom: 18px;
+}
+
+/**********DEPLOY-SCALE**********/
+.borde-list{
+  border-left: 1px solid #5b6d91;
+  padding: 10px 0 10px 5px;
+}
+
+.deploy ul li{
+  font-size: 16px;
+}
+
+
 
 /**********MEDIAQUERY *************/
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -234,6 +274,10 @@ text-decoration: underline;
     font-size: 16px;
   }
 
+  .navbar{
+    margin-bottom: 0;
+  }
+
   .pad-top-bot{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -245,5 +289,9 @@ text-decoration: underline;
 
   .loghi .text-uppercase{
    font-size: 14px;
+  }
+
+  .loghi img{
+    max-width: 150px;
   }
 }
