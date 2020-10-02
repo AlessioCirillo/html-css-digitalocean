@@ -9,6 +9,10 @@ body{
   padding-bottom: 30px;
 }
 
+.pad-top{
+  padding-top: 30px;
+}
+
 .mb-30{
   margin-bottom: 30px;
 }
@@ -34,6 +38,10 @@ body{
   color: #2485fd;
 }
 
+.back-gray{
+  background: #f3f5f9;
+}
+
 ul{
   padding-left: 0;
 }
@@ -43,6 +51,19 @@ ul{
   color: #031b54;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.blue-point{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #2485fd;
+}
+
+.blue-point:hover{
+  background: #2485fd;
+  cursor: pointer;
 }
 
 /********** TIPOGRAPHY ***********/
@@ -188,10 +209,6 @@ text-decoration: underline;
 }
 
 /************LOGOS************/
-.logos{
-  background: #f3f5f9;
-}
-
 .loghi{
   height: 80px;
 }
@@ -240,7 +257,30 @@ text-decoration: underline;
   font-size: 16px;
 }
 
+/***********FOR DEVELOPERS***********/
+.img-arrow-point img{
+  width: 100%;
+}
 
+.fa-angle-left,
+.fa-angle-right{
+  font-size: 40px;
+}
+
+.arrow i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+
+.arrow i:hover{
+  cursor: pointer;
+}
+.img-arrow-point p{
+  color: #031b54;
+  font-weight: 500;
+}
 
 /**********MEDIAQUERY *************/
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -253,7 +293,7 @@ text-decoration: underline;
   }
 }
 
-/*************DESKTOP**************/
+/*************TABLRT**************/
 @media screen and (min-width: 768px){
   .hero-text{
     padding-right: 50px;
@@ -262,9 +302,14 @@ text-decoration: underline;
   .loghi{
     height: 70px;
   }
+
+  .arrow{
+    height: 223px;
+    position: relative;
+  }
 }
 
-/***********TABLET***********/
+/***********DESKTOP***********/
 @media screen and (min-width: 991px){
   h1{
     font-size: 50px;
@@ -283,6 +328,10 @@ text-decoration: underline;
     padding-bottom: 60px;
   }
 
+  .pad-top{
+    padding-top: 60px;
+  }
+
   .loghi{
     height: 90px;
   }
@@ -293,5 +342,19 @@ text-decoration: underline;
 
   .loghi img{
     max-width: 150px;
+  }
+
+  .arrow{
+    height: 295px;
+    position: relative;
+  }
+}
+
+
+/*********** > 1200PX ***********/
+@media screen and (min-width: 1200px){
+  .arrow{
+    height: 360.2px;
+    position: relative;
   }
 }
