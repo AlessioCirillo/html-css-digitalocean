@@ -46,11 +46,15 @@ ul{
   padding-left: 0;
 }
 
+.bottom-p i{
+  margin-left: 10px;
+}
+
 .mini-pic p{
   font-size: 14px;
   color: #031b54;
   font-weight: 500;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .blue-point{
@@ -97,6 +101,11 @@ a:hover{
 li{
   list-style: none;
 }
+
+small{
+  font-size: 14px;
+}
+
 /**********HEADER**********/
 .navbar .container{
   position: relative;
@@ -149,8 +158,6 @@ li{
   margin-left: 10px;
 }
 
-
-
 /********** HERO ***********/
 .hero{
   background-image: url(../img/bg-banner-home.jpg);
@@ -161,6 +168,7 @@ li{
 .hero .hero-text p{
   color: #b2bfd8;
 }
+
 .form{
   padding: 10px;
   background: #fff;
@@ -214,7 +222,7 @@ text-decoration: underline;
 }
 
 .logos .top-p .text-uppercase{
- font-size: 12px;
+ font-size: 13px;
  font-weight: 500;
  margin-bottom: 25px;
  color: #5b6d91;
@@ -226,10 +234,6 @@ text-decoration: underline;
   display: inline-block;
 }
 
-.logos .bottom-p p i{
-  margin-left: 10px;
-}
-
 .loghi img{
   height: 100%;
   width: 100%;
@@ -239,7 +243,6 @@ text-decoration: underline;
 
 #hashi{
   padding-top: 5px;
-
 }
 
 #splunk-logo{
@@ -262,8 +265,8 @@ text-decoration: underline;
   width: 100%;
 }
 
-.fa-angle-left,
-.fa-angle-right{
+.arrow .fa-angle-left,
+.arrow .fa-angle-right{
   font-size: 40px;
 }
 
@@ -277,9 +280,16 @@ text-decoration: underline;
 .arrow i:hover{
   cursor: pointer;
 }
+
 .img-arrow-point p{
   color: #031b54;
   font-weight: 500;
+}
+
+/**************BUSINESS***************/
+.bottom-p{
+  display: block;
+  margin-top: 10px;
 }
 
 /**********MEDIAQUERY *************/
@@ -349,7 +359,6 @@ text-decoration: underline;
     position: relative;
   }
 }
-
 
 /*********** > 1200PX ***********/
 @media screen and (min-width: 1200px){
