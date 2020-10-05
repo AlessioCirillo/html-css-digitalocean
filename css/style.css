@@ -1,6 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   color: #5b6d91;
+  position: relative;
 }
 
 /************* UTILITIES **************/
@@ -426,12 +427,16 @@ footer{
   background: #010e28;
 }
 
+footer .copy{
+  margin-bottom: 0;
+}
+
 footer p{
   font-size: 16px;
 }
 
 footer i{
-  font-size: 20px;
+  font-size: 25px;
   color: #5b6d91;
 }
 
@@ -448,6 +453,36 @@ footer li a:hover{
   color: #fff;
 }
 
+/**************FIXED*************/
+.fixed img{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background: #0063ef;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.fixed p{
+  position: fixed;
+  bottom: 10px;
+  right: 110px;
+  width: 300px;
+  margin-bottom: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.square{
+  position: fixed;
+  background: #fff;
+  right: 105px;
+  bottom: 20px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
 /**********MEDIAQUERY *************/
 @media screen and (min-width: 768px) and (max-width: 991px){
   .navbar-toggle{
