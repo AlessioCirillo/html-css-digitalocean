@@ -13,12 +13,20 @@ body{
   padding-top: 30px;
 }
 
+.pad-bot{
+  padding-bottom: 30px;
+}
+
 .mb-30{
   margin-bottom: 30px;
 }
 
 .mb-10{
   margin-bottom: 10px;
+}
+
+.mt-10{
+  margin-top: 10px;
 }
 
 .btn{
@@ -42,6 +50,10 @@ body{
   background: #f3f5f9;
 }
 
+.back-white{
+  background: #fff;
+}
+
 ul{
   padding-left: 0;
 }
@@ -63,8 +75,9 @@ ul{
 
 .blue-point{
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  margin: 0 2px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 2px solid #2485fd;
 }
@@ -109,6 +122,10 @@ li{
 
 small{
   font-size: 14px;
+}
+
+.white{
+  color: #fff;
 }
 
 /**********HEADER**********/
@@ -311,6 +328,18 @@ text-decoration: underline;
   background-image: linear-gradient(#0047c5, #001e99);
 }
 
+.griglia h2{
+  color: #fff;
+}
+
+.griglia .code{
+  color: #fff;
+}
+
+.griglia .location{
+  color: #b2bfd8;
+}
+
 .griglia ul li{
   padding: 10px;
   border-bottom: 1px solid #fff;
@@ -321,14 +350,14 @@ text-decoration: underline;
   padding-right: 0;
 }
 
-.griglia .col-xs-5:first-child,
+.griglia .col-xs-6,
 .griglia .col-md-7,
 .griglia .col-sm-7{
   padding-right: 0;
   padding-left: 0;
 }
 
-.griglia .col-xs-5:last-child,
+.griglia .col-xs-4,
 .griglia .col-sm-3,
 .griglia .col-md-3{
   padding-left: 0;
@@ -337,6 +366,88 @@ text-decoration: underline;
   margin: 0;
   width: 100%;
 }
+
+.griglia .bottom-p a {
+  color: #00d7ce;
+}
+
+.griglia .bottom-p a:hover {
+  color: #2485fd;
+}
+
+/*********DEV-TEAMS***********/
+.dev-teams .img-arrow-point img{
+  width: 250px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.dev-teams .bottom-p a:hover{
+  color: #031b54;
+}
+
+.row .back-white .font-24{
+  color: #5b6d91;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.arrow-2 .fa-angle-left,
+.arrow-2 .fa-angle-right{
+  font-size: 40px;
+}
+
+.arrow-2 i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+
+.arrow-2 i:hover{
+  cursor: pointer;
+}
+
+.img-arrow-point .strong{
+  font-weight: 700;
+}
+
+/**********START NOW***********/
+.start{
+  background-image: linear-gradient(#0047c5, #001e99);
+}
+
+.start h2{
+  color: #fff;
+}
+
+/***************FOOTER**************/
+footer{
+  background: #010e28;
+}
+
+footer p{
+  font-size: 16px;
+}
+
+footer i{
+  font-size: 20px;
+  color: #5b6d91;
+}
+
+footer li a i:hover{
+  color: #fff;
+}
+
+footer li a{
+  font-size: 14px;
+  color: #5b6d91;
+}
+
+footer li a:hover{
+  color: #fff;
+}
+
 /**********MEDIAQUERY *************/
 @media screen and (min-width: 768px) and (max-width: 991px){
   .navbar-toggle{
@@ -360,6 +471,11 @@ text-decoration: underline;
 
   .arrow{
     height: 223px;
+    position: relative;
+  }
+
+  .arrow-2{
+    height: 408px;
     position: relative;
   }
 }
@@ -401,6 +517,15 @@ text-decoration: underline;
 
   .arrow{
     height: 295px;
+    position: relative;
+  }
+
+  .mb-0{
+    margin-bottom: 0;
+  }
+
+  .arrow-2{
+    height: 390px;
     position: relative;
   }
 }
